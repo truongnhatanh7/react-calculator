@@ -1,0 +1,28 @@
+.calculator {
+  width: calc(50px * 4);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.result {
+  text-align: right;
+  grid-auto-flow: row;
+  display: block;
+  background-color:mediumturquoise;
+  padding: 16px 8px;
+  grid-column: span 4;
+  border: 1px solid white;
+  /* grid-column-start: 0; */
+  /* grid-column-end: 5; */
+}
+
+button {
+  padding: 8px;
+  background-color: tan;
+  border: 1px solid white;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
