@@ -86,14 +86,10 @@ function handleClear(result) {
 }
 
 function handleDigit(result, action) {
-  if (result.completed) {
+  if (result.result === "0") {
     result.result = action.payload;
   } else {
-    if (result.result === "0") {
-      result.result = action.payload;
-    } else {
-      result.result += action.payload;
-    }
+    result.result += action.payload;
   }
 }
 
